@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instangram</title>
+        <meta charset="utf-8">
+        <style>
+            #main {
+                height: 800px;
+                width: 800px;
+                border: 1px solid white;
+                margin: auto;
+            
+            }
+            #phones {
+                position: absolute;
+                height: 530px;        
+                border: 1px solid white;
+                left: 335px;
+                top: 102px;
+                
+            }
+            #typing {
+                position: absolute;
+                height: 545px;
+                width: 245px;
+                text-align: center;
+                border: 1px solid #999;
+                border-radius: 2px;
+                margin-left: 450px;
+                margin-top: 22px;
+                padding-left: 27px;
+                padding-right: 27px;
+            }
+            #instagram_word {
+                
+                width: 140px;
+                
+            }
+           
+            .words {
+                color: #999;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .buttons {
+                color: #fff;
+                width: 225px;
+                height: 30px;
+                border: 1px solid #3897f0;
+                border-radius: 4px;
+                background-color: #3897f0;
+                cursor: pointer;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 500;
+               
+            }
+          
+            #OR {
+                position: relative;
+                bottom: 20px;
+                width: 80px;
+                margin: auto;
+                background-color: white;
+                color: #999;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            #pngFacebook {
+                position: relative;
+                height: 13px;
+                background-color: white;
+                color: black;
+                top: 3px;
+            }
+            .line {
+                line-height: 43px;
+            }
+            .inputs {
+                border-radius: 4px;
+                width: 225px;
+                height: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 11.0px;
+            }
+            #topreg {
+                height: 10px;
+            }
+            #botreg {
+                color:#999;
+                font-size: 12px;
+                font-weight: 400;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center;
+            }
+            #bot_type {
+                position: relative;
+                border: 1px solid #999;
+                border-radius: 2px;
+                margin-top: 580px;
+                left: 450px;
+                margin-right: 499px;
+                text-align: center;
+            }
+            #Sign-in {
+                font-size: 13px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+            }
+            #IN {
+                color: rgba(66, 66, 255, 0.911);
+                cursor: pointer;
+                
+            }
+            #DownloadApp {
+                text-align: center;
+                margin-left: 400px;
+                font-size: 13px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+            }
+            .ref {
+                color: #999;
+                text-decoration-line: none;
+                font-weight: bold;
+            }
+            #markets {
+                height: 100px;
+                padding-left: 500px;
+            }
+            #support {
+                color: #1b018f;
+                font-size: 12px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-transform: uppercase;
+                font-weight: 400;
+                cursor: pointer;
+            }
+            #c {
+                color: rgb(153, 153, 153);
+                font-weight: 600;
+                font-size: 12px;
+                text-align: center;
+                line-height: 18px;
+            
+            }
+           
+            .mySlides {
+                position: absolute;
+                height: 372px;
+                width: 210px;
+                border: 1px #999 solid;
+                margin-left: 187px;
+                margin-top: 176px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <img id="phones" src="../images/phones.png" alt="phones">
+            
+            <img class="mySlides" src="../pictures/picture1.jpg">
+            <img class="mySlides" src="../pictures/picture2.jpg">
+            <img class="mySlides" src="../pictures/picture3.jpg">
+            <img class="mySlides" src="../pictures/picture4.jpg">
+            <img class="mySlides" src="../pictures/picture5.jpg">
+            <script src="../scripts/slide_show.js"></script>
+            <div id="typing">
+                <p class="words"><img id="instagram_word" src="../images/Instagram_word.png" alt="instagram_word">
+                <br>Зарегистрируйтесь, чтобы<br>смотреть фото и видео ваших <br>друзей.
+                </p>
+                <button class="buttons">
+                    <img id=pngFacebook src="../images/facebook.png"> Войти через Facebook
+                </button>
+                <br></br>
+                <div>
+                    <hr size="1" color="#999" width="224">
+                    <div>
+                        <p id="OR">или</p>
+                        
+                    </div>
+                </div>
+                <div class="line">
+                    <input type="text" placeholder="Моб. телефон или эл. адрес" class="inputs">
+                    <input type="text" placeholder="Имя и фамилия" class="inputs">
+                    <input type="text" placeholder="Имя пользователя" class="inputs">
+                    <input type="text" placeholder="Пароль" class="inputs">
+                </div>
+                <div id="topreg"></div>
+                <button class="buttons">
+                    Регистрация
+                </button>
+                <p id="botreg"> 
+                    Регистрируясь, вы принимаете<br>наши <a class="ref" target="_blank" href="https://help.instagram.com/581066165581870">
+                    Условия</a>, <a class="ref" target="_blank" href="https://help.instagram.com/519522125107875">Политику<br>
+                    использования данных</a> и<br>
+                    <a class="ref" target="_blank" href="/legal/cookies/">Политику в отношении файлов<br>cookie</a>.
+                </p>
+            </div>
+            <div id="bot_type"> 
+                <p id="Sign-in">Есть аккаунт? <span id="IN">Вход</span></p>
+
+            </div>
+            <p id="DownloadApp">Установите приложение.</p>
+            <div id="markets">
+
+            <img alt="Доступно в Магазине приложений" 
+            src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_russian-ru.png/bfba6d0fd6bd.png" width="100px">         
+            
+            <img alt="Доступно в Google Play"
+            src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_russian-ru.png/4c70948c09f3.png" width="100px">
+
+            </div>
+            <div id="support">
+                о нас &ensp; поддержка &ensp; пресса &ensp; api &ensp; вакансии &ensp; конфиденциальность &ensp; условия &ensp; директория &ensp; профили &ensp; хэштеги &ensp; язык <br><span id="c">© 2019 Instagram</span>
+
+
+            </div>
+
+        </div>
+ 
+    </body>
+</html>
