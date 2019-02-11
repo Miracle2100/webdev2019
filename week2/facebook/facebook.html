@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook - Log in or Sign Up</title>
+    <style>
+       *{
+           padding: 0px;
+           margin:0px;
+       }
+        #bluebar{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 82px;
+        }
+        #upperbox{
+            width:980px;
+            height: 82px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #background{
+            background-color: #edf0f5;
+            position: absolute;
+            top: 83px;
+            left: 0%;
+            height: 600px;;
+            z-index: 0;
+        }
+        #facebook{
+            position: absolute;
+            color:aliceblue;
+            font-size: 40px;
+            font-family: Helvetica, Arial, sans-serif;
+            margin-top: 25px;
+            /* float: left; */
+            z-index: 1;
+        }
+        
+        .input{
+            margin-right: 12px; 
+            margin-top: 5px; 
+            width: 140px;
+            height: 18px;
+        }
+        #loginButton{
+            background-color:#466ab9;
+            border:1px solid #314179;
+            cursor:pointer;
+            color:aliceblue;
+            height: 24px;
+            width: 55px;
+            margin-top: 5px;
+            font-family:Arial;
+            font-size:12px;
+            font-weight:bold;
+            padding:3px 8px;
+            text-decoration:none;
+        }
+        #logintable{
+            margin-top: 12px;
+            margin-left: 600px;
+            position: absolute;
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+	        text-decoration:none;
+            color: aliceblue;
+            z-index: 2;
+        }
+        #forgot{
+            margin-top: 2px;
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:rgba(255, 255, 255, 0.452);
+        }
+        #forgot:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #middle{
+            width:980px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #353535;
+        }
+        #middle-left{
+            margin-top: 63px;
+            position: absolute;
+        }
+        #middle-left h1{
+            font-size: 30px;
+        }
+        #middle-right{
+            margin-left: 580px;
+            margin-top: 18px;
+            position: absolute;
+        }
+        #middle-right h1{
+            font-size: 40px;
+        }
+        .right-text-p{
+            font-size:20px;
+            margin-top:5px;
+            margin-bottom:8px;
+        }
+        .input2{
+            height: 38px;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-right: 7px;
+            border-radius: 5px;
+            border: 1px solid;
+            border-color: #c2cfff;
+        }
+        #f-name{
+            width: 195px;
+        }
+        #l-name{
+            width: 195px;
+        }
+        #mob{
+            width: 405px;
+        }
+        #n-pass{
+            width:405px;
+        }
+        #birthday{
+            margin-top: 20px;
+        }
+        .select-bar{
+            height: 30px;
+            width: 70px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .htext{
+            margin-top: 5px; 
+            font-size: 12px;
+            color: rgb(104, 118, 167);
+            margin-bottom: 14px;
+        }
+        .htext:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .gender{
+            margin-left:22px; 
+        }
+        #policy-text{
+            margin-top: 10px;
+            font-size: 12px;
+            color: rgb(141, 141, 141);
+        }
+        #signButton {
+        width: 200px;
+        margin-top:20px;
+        box-shadow:inset 0px 1px 0px 0px #9acc85;
+        background:linear-gradient(to bottom, #74ad5a 5%, #5b8f40 100%);
+        background-color:#74ad5a;
+        border-radius:5px;
+        border:1px solid #355e20;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Trebuchet MS;
+        font-size:20px;
+        font-weight:bold;
+        padding:8px 47px;
+        }
+        #signButton:hover {
+        background:linear-gradient(to bottom, #5b8f40 5%, #74ad5a 100%);
+        background-color:#5b8f40;
+    }
+    #line{
+        margin-top:20px;
+    }
+    #last-text{
+        margin-top: 10px;
+        font-size: 14px;
+        color:#494b53 
+    }
+    #last-htext{
+        color: #0b2996
+    }
+    #last-htext:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <img id="bluebar" src="https://www.desktopbackground.org/t/2012/08/21/440071_ios-navigation-bar-tint-color-like-facebook-app-stack-overflow_640x960_h.png" alt="blue bar">
+    <img id="background" width=100%>
+   
+<div id="upperbox"> 
+    <a href="https://www.facebook.com/"><h1 id="facebook">facebook</h1></a>
+   
+    <table id="logintable" >
+        <tbody>
+            <tr>
+                <td>Email or Phone</td>
+                <td>Password</td>
+            </tr>
+            <tr>
+                <td><input type="email" class="input"></td>
+                <td><input type="email" class="input" id="password"></td>
+                <td> <button id="loginButton">Log In</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p id="forgot">Forgot account?</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<div id="middle">
+    <div id="middle-left">
+            <h1>Connect with friends and the <br> world around you on Facebook.</h1>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png" alt="picture">
+    </div>
+
+    <div id="middle-right">
+            <h1>Sign Up</h1>
+            <p class="right-text-p">It's free and always will be.</p>
+            <input type="text" name="First name" placeholder="  First name" class="input2" id="f-name"> <input type="text" name="Last name"  placeholder="  Last name" class="input2" id="l-name"><br>
+            <input type="text" name="Mobile number or email"  placeholder="  Mobile number or email" class="input2" id="mob"><br>
+            <input type="text" name="New password"  placeholder="  New password" class="input2" id="n-pass">
+            <p class="right-text-p" id="birthday">Birthday</p>
+            <Select class="select-bar">
+                <option value="0">Month</option>
+                <option value="0">Jan</option>
+                <option value="0">Feb</option>
+                <option value="0">Mar</option>
+                <option value="0">Apr</option>
+                <option value="0">May</option>
+                <option value="0">Jun</option>
+                <option value="0">Jul</option>
+                <option value="0">Aug</option>
+                <option value="0">Sep</option>
+                <option value="0">Oct</option>
+                <option value="0">Nov</option>
+                <option value="0">Dec</option>
+            </Select>
+            <Select class="select-bar">
+                    <option value="0">Day</option>
+                    <option value="0">1</option>
+                    <option value="0">2</option>
+                    <option value="0">3</option>
+                    <option value="0">4</option>
+                    <option value="0">5</option>
+                    <option value="0">6</option>
+                    <option value="0">7</option>
+                    <option value="0">8</option>
+                    <option value="0">9</option>
+                    <option value="0">10</option>
+                    <option value="0">11</option>
+                    <option value="0">12</option>
+                    <option value="0">13</option>
+                    <option value="0">14</option>
+                    <option value="0">15</option>
+                    <option value="0">16</option>
+                    <option value="0">17</option>
+                    <option value="0">18</option>
+                    <option value="0">19</option>
+                    <option value="0">20</option>
+                    <option value="0">21</option>
+                    <option value="0">22</option>
+                    <option value="0">23</option>
+                    <option value="0">24</option>
+                    <option value="0">25</option>
+                    <option value="0">26</option>
+                    <option value="0">27</option>
+                    <option value="0">28</option>
+                    <option value="0">29</option>
+                    <option value="0">30</option>
+                    <option value="0">31</option>
+                </Select>
+                <Select class="select-bar">
+                        <option value="0">Year</option>
+                        <option value="0">2019</option>
+                        <option value="0">2018</option>
+                        <option value="0">2017</option>
+                        <option value="0">2016</option>
+                        <option value="0">2007</option>
+                        <option value="0">2001</option>
+                        <option value="0">1999</option>
+                        <option value="0">1994</option>
+                        <option value="0">1989</option>
+                        <option value="0">1982</option>
+                        <option value="0">1975</option>
+                        <option value="0">1905</option>
+                </Select> 
+                <p class="htext">Why do I need to provide my birthday?</p>
+                <input type="radio" name="gender" class="gender" value="female"> Female
+                <input type="radio" name="gender" class="gender" value="male"> Male
+                <p id="policy-text">By clicking Sign Up, you agree to our <span class="htext">Term,</span> <span class="htext">Data Policy</span> and<br>
+                <span class="htext">Cookies Policy</span>. You may receive SMS Notifications from us and <br>
+                can opt out any time.</p>
+                <button id="signButton">Sign Up</button>
+                <hr id="line">
+                <p id="last-text"><span id="last-htext">Create a Page</span> for a celebrity, band or business.</p>
+    </div>
+</div>
+
+</body>
+</html>
